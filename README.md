@@ -1,6 +1,11 @@
 # 🌿 地域おこし × スキルマッチングアプリ  
 **― 地図でつなぐ、地域と人の新しい関係 ―**
 
+
+---
+🗺️ **アプリを見る**
+👉 [https://mei-oku.github.io/local-connection-app/](https://mei-oku.github.io/local-connection-app/)
+
 ---
 
 ## 🪞 背景・課題（Why）
