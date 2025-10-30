@@ -4,7 +4,7 @@
 ---
 
 ## 🌐 アプリ公開ページ
-🗺️ [Local Connection App - 札幌と地方をつなぐマップアプリ](https://mei-oku.github.io/local-connection-app/)
+🗺️ [Local Connection App - 札幌と地方をつなぐマップアプリ](https://mei-oku.github.io/local-connection-app/index.html)
 
 ---
 
