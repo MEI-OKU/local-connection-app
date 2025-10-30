@@ -3,10 +3,7 @@
 
 
 ---
-🗺️ **アプリを見る**
-👉 [https://mei-oku.github.io/local-connection-app/](https://mei-oku.github.io/local-connection-app/)
 
----
 
 ## 🪞 背景・課題（Why）
 
