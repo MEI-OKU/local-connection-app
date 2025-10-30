@@ -1,6 +1,12 @@
 # 🌿 地域おこし × スキルマッチングアプリ  
 **― 地図でつなぐ、地域と人の新しい関係 ―**
 
+---
+
+## 🌐 アプリ公開ページ
+🗺️ [Local Connection App - 札幌と地方をつなぐマップアプリ](https://mei-oku.github.io/local-connection-app/)
+
+---
 
 ---
 
