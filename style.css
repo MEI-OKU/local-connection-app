@@ -1,0 +1,157 @@
+/* ===============================
+   🌿 地域マップアプリ 共通スタイル
+   =============================== */
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* ---------- ヘッダー ---------- */
+header {
+  background: #2b6777;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+header p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ---------- 地図 ---------- */
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- メインエリア ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ---------- フィルターエリア ---------- */
+#filters {
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+#filters button {
+  background: #52ab98;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+#filters button.active {
+  background: #2b6777;
+}
+
+#filters button:hover {
+  background: #3d8d80;
+}
+
+/* ---------- 地域カードレイアウト ---------- */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* ---------- 各地域カード ---------- */
+.region-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 220px;
+  cursor: pointer; /* ← カード全体をクリックできるように */
+}
+
+.region-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.region-card h3 {
+  color: #2b6777;
+  margin: 0;
+}
+
+.region-card .weather {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* ---------- ボタン群 ---------- */
+.card-actions {
+  margin-top: auto; /* 下部に固定 */
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-actions button {
+  flex: 1;
+  background: #52ab98;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s ease;
+}
+
+.card-actions button:hover {
+  background: #3d8d80;
+}
+
+/* ---------- フッター ---------- */
+footer {
+  text-align: center;
+  color: #777;
+  margin: 2rem 0 1rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- モバイル対応 ---------- */
+@media (max-width: 600px) {
+  #map {
+    height: 300px;
+  }
+
+  .card-actions {
+    flex-direction: column; /* スマホではボタンを縦並び */
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+}

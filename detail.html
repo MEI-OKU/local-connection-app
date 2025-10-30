@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>地域詳細 - 地域創生×IT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="region-name">地域詳細</h1>
+  </header>
+
+  <main id="region-detail" style="max-width:800px;margin:auto;padding:1rem;">
+    <img id="region-image" src="" alt="" style="width:100%;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);" />
+    <p id="region-desc" style="margin-top:1rem;"></p>
+    <p id="region-story" style="margin-top:0.5rem;line-height:1.6;"></p>
+    <button onclick="history.back()" style="margin-top:1.5rem;background:#2b6777;color:white;padding:0.6rem 1rem;border:none;border-radius:6px;">← 戻る</button>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    fetch("regions.json")
+      .then(res => res.json())
+      .then(data => {
+        const region = data.find(r => r.name === name);
+        if (!region) return;
+        document.getElementById("region-name").textContent = region.name;
+        document.getElementById("region-desc").textContent = region.desc;
+        document.getElementById("region-story").textContent = region.story;
+        document.getElementById("region-image").src = region.image;
+      });
+  </script>
+</body>
+</html>
