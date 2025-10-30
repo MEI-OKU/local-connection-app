@@ -112,8 +112,6 @@
 - 設計・デザイン：Figma / STUDIO  
 - 試作・開発候補：Glide, React, Next.js, Firebase  
 - テーマ：地方創生 × IT × マップAPI  
-- 学びながら段階的に実装予定（Politec訓練課程内で応用）
-
 ---
 
 ## 📜 ライセンス
