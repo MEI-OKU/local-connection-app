@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>地域創生×IT｜関係人口を生み出すマップ型サービス</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>地域創生 × IT</h1>
+    <p>関係人口を生み出すマップ型サービス</p>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <section id="region-list">
+      <h2>地域を探す</h2>
+
+      <div id="filters">
+        <button class="active" onclick="filterRegions('all')">すべて</button>
+        <button onclick="filterRegions('海辺')">海辺</button>
+        <button onclick="filterRegions('山間')">山間</button>
+        <button onclick="filterRegions('観光')">観光</button>
+      </div>
+
+      <div id="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 地域創生×ITプロジェクト</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
