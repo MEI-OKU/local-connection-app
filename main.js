@@ -1,4 +1,4 @@
-const WEATHER_API_KEY = "KEY";
+const WEATHER_API_KEY = "59e48c0c7f2f08f2e8503df5be19f555";
 
 let regions = [];
 let markers = [];
@@ -105,4 +105,5 @@ fetch("regions.json")
     renderRegions(regions);
   })
   .catch(() => alert("地域データの読み込みに失敗しました"));
+
 
